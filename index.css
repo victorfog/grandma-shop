@@ -1,0 +1,140 @@
+.shop .kitties .cat {
+    float: left;
+    margin: 5px;
+    width: 250px;
+    height: 500px;
+
+}
+
+.cat-image {
+    height: 250px;
+    display: table-cell;
+    vertical-align: bottom;
+
+
+}
+.cat-image img {
+    width: 200px;
+}
+
+.cat .info {
+    height: 18px;
+    position: relative;
+}
+
+.cat .info H2, H3 :hover {
+    margin: 3px 0px;
+}
+
+H3{
+    margin: 0px;
+    text-transform: capitalize;
+    font-weight: normal;
+}
+
+.price {
+    margin: 0px 0px;
+    font-size: 18px;
+    color: darkred;
+    font-weight: bold;
+}
+.price p {
+    margin: 0;
+}
+.price small {
+    font-size: 60%;
+    font-weight: normal;
+    color: black;
+    text-decoration: line-through;
+}
+
+
+.cat .info H3 {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.cat .info :hover H3{
+    color: red;
+    opacity: .7;
+}
+.cat .cat-image img:hover {
+    opacity: .7;
+}
+
+/* начало звездочек*/
+
+.cat .stars{
+    display: inline-block;
+    direction: rtl;
+}
+
+.stars input[type=radio]{
+    display: none;
+}
+
+.cat .description {
+    height: 170px;
+    position: relative;
+    margin: 10px 0px;
+
+}
+
+.starsLabel{
+    content: "\2605";
+    color: darkgrey;
+
+}
+
+.starsLabel:hover, .starsLabel:hover ~ .starsLabel{
+    color: gold;
+}
+
+.starsLabel:checked, .star:checked ~ .starsLabel {
+    color: gold;
+}
+
+/* конец звезд  */
+
+.category {
+    margin: 4px 0px;
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+.shop .view:checked ~ .kitties .cat {
+    width: 100%;
+    height: 300%;
+    display: table;
+}
+.shop .view:checked ~ .kitties .cat .cat-image img{
+    width: 200px;
+}
+.shop .view:checked ~ .kitties .cat .cat-image{
+    float: left;
+    height: auto;
+    padding: 20px;
+}
+.shop .view:checked ~ .kitties .cat .info{
+    height: auto;
+    padding: 20px 0px 0px;
+}
+.shop .view:checked ~ .kitties.cat .category{
+    left 20px;
+    height: auto;
+    float: left;
+    padding: 20px;
+}
+
+.shop .view:checked ~ .kitties .cat .description{
+    height: auto;
+    width: 40%;
+    float: right;
+    padding: 20px 0px 0px;
+
+}
+.shop .view:checked ~.kitties .group_element{
+
+    display: inline-block;
+}
+
